@@ -16,3 +16,4 @@ SELECT ROUND ( (COUNT (DISTINCT bno) * 32) / 1024) AS "MBs changed"
                          FROM v$backup_datafile bd
                         WHERE bd.file# = &&1 AND bd.incremental_level <= 1) BETWEEN low
                                                                                 AND high);
+                                                                                
